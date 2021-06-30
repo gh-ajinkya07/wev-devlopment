@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <title>About - RedStore</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            .new{
+                margin: 200px;
+            }
+        </style>
+    </head>
+<body>
+       <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo.png" alt='logo' width="125px"></a>
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="contactus.html">Contact</a></li>
+                    <li><a href="accounts.html">Account</a></li>
+                </ul>
+            </nav>
+            <a href="cart.html"><img src="images/cart.png" alt="cart" width='30px' height="30px"></a>
+            <img src="images/menu.png" alt="menu-image" class="menu-icon" onclick="menutoggle()">
+        </div>
+    </div> 
+
+
+<!---------------------account-page------------------------->
+
+<div class="small-container new">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor condimentum massa ultricies lacinia.
+         In hac habitasse platea dictumst. In posuere sit amet ex vitae convallis. Vestibulum porttitor laoreet dictum. 
+         Praesent fermentum lacus eget facilisis commodo. Morbi nec magna at nisi vulputate egestas. 
+         Sed et mattis turpis, id varius ligula. Fusce placerat arcu facilisis turpis interdum, nec dapibus est eleifend. 
+         Nunc magna libero, malesuada eget efficitur luctus, interdum vel nunc.
+    </p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ex dui, vestibulum posuere metus nec, volutpat fringilla lorem. 
+        Vestibulum convallis mauris et turpis elementum, at malesuada purus facilisis. Ut nec iaculis nibh. 
+        Suspendisse sagittis turpis a dictum lacinia. Sed eget nunc mauris. Suspendisse vel sem ipsum. Sed id lectus venenatis, euismod felis a, blandit leo. 
+        Vivamus est odio, dapibus in elit ac, mattis finibus eros. Etiam cursus nisi a mauris euismod, in elementum massa volutpat. 
+        Aliquam eget scelerisque sapien, nec malesuada magna. Morbi congue justo ut dui porta, in laoreet arcu sodales. 
+        Suspendisse vitae dolor ornare, volutpat urna a, vulputate lacus.</p>
+</div>
+
+<!------------------------------Footer-------------------------->
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download App for Android and ios mobile phone.</p>
+                    <div class="app-logo">
+                        <img src="images/play-store.png" alt="playstore">
+                        <img src="images/app-store.png" alt="appstore">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="images/logo-white.png">
+                    <p>Our Purpose Is to Substainably Make the Pleasure and
+                        Benifits of Sport Accessible to the Many.</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow US</h3>
+                    <ul>
+                        <li>FaceBook</li>
+                        <li>Instagram</li>
+                        <li>Twitter</li>
+                        <li>Youtube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2021 - Ajinkya Patil</p>
+        </div>
+    </div>
+
+<!----------------------------JS for Toggle Menu------------------->
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+        MenuItems.style.maxHeight = "0px";
+
+        function menutoggle(){
+            if (MenuItems.style.maxHeight == "0px"){
+
+                MenuItems.style.maxHeight = "200px";
+
+            }
+            else{
+
+                MenuItems.style.maxHeight = "0px";
+
+            }
+        }
+    </script>
+
+<!----------------------------JS for Toggle Form------------------->
+
+    <script>
+        var LoginForm = document.getElementById('LoginForm');
+        var RegForm = document.getElementById('RegForm');
+        var Indicator = document.getElementById("Indicator");
+
+        function register(){
+            RegForm.style.transform = "translateX(0px)";
+            LoginForm.style.transform = "translateX(0px)";       
+            Indicator.style.transform = "translateX(100px)";       
+         }
+         function login(){
+            RegForm.style.transform = "translateX(300px)";
+            LoginForm.style.transform = "translateX(300px)"; 
+            Indicator.style.transform = "translateX(0px)";      
+         }
+    </script>
+
+</body>
+</html>
